@@ -30,9 +30,9 @@ import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
-public class ServiceTest {
+public class DepartmentServiceTest {
 
-    private static final Logger log = LoggerFactory.getLogger(ServiceTest.class);
+    private static final Logger log = LoggerFactory.getLogger(DepartmentServiceTest.class);
     @Spy
     private DepartmentMapper departmentMapper = new DepartmentMapperImpl();
 

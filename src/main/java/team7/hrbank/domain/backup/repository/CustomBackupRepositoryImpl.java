@@ -10,7 +10,7 @@ import team7.hrbank.domain.backup.dto.BackupListRequestDto;
 import team7.hrbank.domain.backup.entity.Backup;
 import team7.hrbank.domain.backup.entity.QBackup;
 
-@Repository
+//@Repository
 @RequiredArgsConstructor
 public class CustomBackupRepositoryImpl implements CustomBackupRepository {
 
