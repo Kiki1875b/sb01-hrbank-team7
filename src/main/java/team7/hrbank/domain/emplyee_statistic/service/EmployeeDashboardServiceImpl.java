@@ -3,6 +3,7 @@ package team7.hrbank.domain.emplyee_statistic.service;
 import jakarta.transaction.Transactional;
 import java.time.Instant;
 import java.time.LocalDate;
+import java.time.YearMonth;
 import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.IsoFields;
@@ -229,7 +230,8 @@ public class EmployeeDashboardServiceImpl implements
       if (unit.equalsIgnoreCase("year")) {
         return LocalDate.of(date.getYear(), 12, 31);
       } else if (unit.equalsIgnoreCase("month") || unit.equalsIgnoreCase("quarter")) {
-        return LocalDate.of(date.getYear(), date.getMonth(), 31);
+        YearMonth yearMonth = YearMonth.of(date.getYear(), date.getMonth());
+        return yearMonth.atEndOfMonth();
       } else if (unit.equalsIgnoreCase("week")) {
         return date;
       } else if (unit.equalsIgnoreCase("day")) {
