@@ -18,6 +18,9 @@
 - 프로그래밍 교육 사이트의 Spring 백엔드 시스템 구축
 - 프로젝트 기간 : 2025.03.14 ~ 2025.03.24
 
+
+`HR Bank` 프로젝트는 기업의 인적 자원 관리를 효율적으로 수행하기 위한 Open EMS 시스템으로 , Batch 기반으로 데이터를 백업을 처리하며 직원 정보, 직원 정보 내역, 부서 관리 등의 기능을 안정적으로 제공하는 SaaS 개발을 목적으로 합니다.
+
 ## 기술 스텍
 
 - Backend : Spring Boot, Spring Data Jpa, Hibernate, Spring Batch, MapStruct
